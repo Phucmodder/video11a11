@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Xem Video</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; display:flex; align-items:center; justify-content:center; min-height:100vh; background:#111; color:#fff; }
+    .player { width: min(900px, 95%); }
+    video { width:100%; height:auto; border-radius:8px; background:#000; display:block; }
+    .info { margin-top:8px; font-size:14px; color:#ccc; text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="player">
+    <!-- Thay src bằng đường dẫn file trên server của bạn -->
+    <video id="video" controls preload="metadata" poster="/images/poster.jpg">
+      <source src="test.mp4" type="video/mp4">
+      <!-- Có thể thêm nhiều source cho các định dạng khác -->
+      <p>Trình duyệt của bạn không hỗ trợ thẻ video. Bạn có thể <a href="/videos/video.mp4" style="color:#66c;">tải về</a> để xem.</p>
+    </video>
+    <div class="info">Nhấn play để xem — nếu video không chạy, kiểm tra CORS / server trả range requests.</div>
+  </div>
+</body>
+</html>
