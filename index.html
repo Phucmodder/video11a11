@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="icon" type="image/png" href="https://scontent.fvca1-4.fna.fbcdn.net/v/t39.30808-6/305849008_473735268125813_3384377391961960276_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEc5AIdjDr4VI_oXGYepq7-cz0s1sChl9pzPSzWwKGX2m011QBAD7fWuNgVVpOu1fCo5N0osVOSEBBu_M9PnV-f&_nc_ohc=HPkoPTANSAkQ7kNvwGOYZAw&_nc_oc=AdkxLuPviiGcOdNuuqpop1QqIQZiFTDZA7JvoMlEPLMKvEfdqjuACCcqQnG69DckU4sgatBL0MfdWJA07R1qMcln&_nc_zt=23&_nc_ht=scontent.fvca1-4.fna&_nc_gid=9BffslTbwXabzeqtVIZDsQ&oh=00_Afb4s9EB7lipG90kWCOaYcUWrF5ELzRbQkvFUm1V8xcBmw&oe=68E26AE2">
     <title>Video Tình Huống - Kinh Tế Pháp Luật 11</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
     <style>
@@ -70,6 +71,8 @@
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
+            text-decoration: none;
+            color: inherit;
         }
         
         .video-card:hover {
@@ -87,12 +90,26 @@
             color: white;
             font-size: 3rem;
             position: relative;
+            overflow: hidden;
+        }
+        
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .video-card:hover .video-thumbnail img {
+            transform: scale(1.05);
         }
         
         .play-icon {
             position: absolute;
             font-size: 4rem;
             opacity: 0.8;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
         }
         
         .video-info {
@@ -174,43 +191,41 @@
 <body>
     <div class="container">
         <header>
-            <h1>Video Tình Huống Thuyết Trình</h1>
+            <h1>Video Tình Huống Bài Học</h1>
             <p class="subtitle">Môn Kinh Tế Pháp Luật 11 - Chương Trình Chân Trời Sáng Tạo<br>
             <span class="teacher-name">Giáo Viên Bộ Môn Cô : Lê Thị Bé Liên</span>
-            </p>
-            <div class="program-badge">Tập Thể 11A11 Do Cô Võ Thị Rum Em Chủ Nhiệm</div>
         </header>
         
         <div class="video-grid">
             <a href="https://video11a11.vercel.app/video1.mp4" target="_blank" class="video-card">
                 <div class="video-thumbnail">
+                    <img src="https://s3.tech12h.com/sites/default/files/styles/image650/public/slide3_799.jpg" alt="Tình Huống 1">
                     <span class="play-icon">▶</span>
                 </div>
                 <div class="video-info">
                     <h3 class="video-title">Bài 4 : Thất Nghiệp Trong Kinh Tế Thị Trường</h3>
                     <div class="video-meta">
-                        <span>Thời lượng: 1:32</span>
                     </div>
                 </div>
             </a>
             
             <a href="https://video11a11.vercel.app/video2.mp4" target="_blank" class="video-card">
                 <div class="video-thumbnail">
+                    <img src="https://s3.tech12h.com/sites/default/files/styles/image650/public/slide3_800.jpg" alt="Tình Huống 2">
                     <span class="play-icon">▶</span>
                 </div>
                 <div class="video-info">
                     <h3 class="video-title">Bài 5 : Thị Trường Lao Động, Việc Làm</h3>
                     <div class="video-meta">
-                        <span>Thời lượng: 4:23</span>
                     </div>
                 </div>
             </a>
             
-        </div>
-        <footer>
+                <footer>
             <p>Website học tập môn Kinh Tế Pháp Luật 11 | Trường THPT Mai Thanh Thế</p>
-            <p>© 2025 - Tập thể lớp dưới sự hướng dẫn của cô Lê Thị Bé Liên</p>
+            <p>© 2024 - 2027</p>
         </footer>
+    </div>
     </div>
 </body>
 </html>
